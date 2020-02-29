@@ -1,0 +1,37 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>欢迎</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <button id="wq">test</button>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#wq").click(function () {
+                var params = {username:'wq',password:123456};
+                var url = "http://192.168.43.179:8090/event-center/user/login";
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: params,
+                    dataType: "json",
+                    cache: false,
+                    success: function (data) {
+                        alert(data)
+                    },
+                    error: function (data, textstatus) {
+                    }
+                });
+            })
+        });
+
+    </script>
+
+</body>
+</html>
