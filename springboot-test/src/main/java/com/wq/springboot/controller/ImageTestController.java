@@ -38,6 +38,7 @@ import java.math.BigDecimal;
         System.out.println(s);
 
         System.out.println("21343");
+        System.out.println("mastertest");
 
      /*   String str="123";
         Object o=null;
