@@ -37,6 +37,8 @@ import java.math.BigDecimal;
         String s = split[1];
         System.out.println(s);
 
+        System.out.println("21343");
+
      /*   String str="123";
         Object o=null;
         try{
@@ -61,12 +63,12 @@ import java.math.BigDecimal;
     }
 
 
-    public void caught(Channel channel, Throwable exception) throws RemotingException {
+    /*public void caught(Channel channel, Throwable exception) throws RemotingException {
         ExecutorService executor = getExecutorService();
         try {
             executor.execute(new ChannelEventRunnable(channel, handler, ChannelState.CAUGHT, exception));
         } catch (Throwable t) {
             throw new ExecutionException("caught event", channel, getClass() + " error when process caught event .", t);
         }
-    }
+    }*/
 }
